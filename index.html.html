@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Inscription – Diangue Dou Wess / Diandhe Lawotako</title>
+<style>
+:root{--bg:#f4f1e8;--card:#fff;--tx:#14302a;--mut:#62736d;--bd:#e6e0cc;--g:#0f4a3c;--g2:#1b6b57;--gx:#fff;--au:#c9a24a;--au2:#f6ebc8;--soft:#f8f6ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a16;--card:#13261f;--tx:#f0ead6;--mut:#a3b3ac;--bd:#27443a;--g:#d8b45a;--g2:#e6c677;--gx:#10231d;--au:#d8b45a;--au2:#3a3320;--soft:#0f211b}}
+:root[data-theme="dark"]{--bg:#0b1a16;--card:#13261f;--tx:#f0ead6;--mut:#a3b3ac;--bd:#27443a;--g:#d8b45a;--g2:#e6c677;--gx:#10231d;--au:#d8b45a;--au2:#3a3320;--soft:#0f211b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:620px;margin:0 auto;padding:0 14px 110px}
+.hero{margin:12px 0 0;border-radius:24px;padding:26px 20px 22px;text-align:center;color:#fff;
+ background:radial-gradient(circle at 85% 0%,rgba(201,162,74,.35),transparent 45%),radial-gradient(circle at 0% 100%,rgba(255,255,255,.08),transparent 40%),linear-gradient(160deg,#0b3a2f,#127058);box-shadow:0 10px 30px rgba(15,74,60,.25)}
+.av{width:76px;height:76px;border-radius:50%;margin:0 auto 10px;display:grid;place-items:center;font-size:1.6rem;font-weight:800;color:#2b2208;background:linear-gradient(135deg,#f1dfa6,#c9a24a);border:3px solid rgba(255,255,255,.55)}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:1.6rem;line-height:1.15;margin:4px 0 8px}
+.hero .q{font-style:italic;opacity:.9;margin:0 0 14px;font-size:.95rem}
+.prof{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:16px;padding:10px 14px;font-size:.88rem;line-height:1.4}
+.prof b{display:block;font-size:1rem;color:#f6e3a1}
+.pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.pills span{background:#f6e3a1;color:#2b2208;font-weight:700;font-size:.78rem;padding:5px 12px;border-radius:99px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:18px;margin-top:14px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.t{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--g);margin:0 0 4px;font-size:1.02rem}
+.t i{font-style:normal;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--g);color:var(--gx);font-size:.82rem}
+.h{color:var(--mut);font-size:.86rem;margin:0 0 12px 38px}
+input[type=text],input[type=tel],textarea{width:100%;font:inherit;color:var(--tx);background:var(--soft);border:1.5px solid var(--bd);border-radius:14px;padding:13px}
+textarea{min-height:84px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--g2);box-shadow:0 0 0 3px rgba(27,107,87,.18)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{position:relative;cursor:pointer}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:block;padding:10px 16px;border-radius:99px;border:1.5px solid var(--bd);background:var(--soft);font-weight:600;transition:.15s}
+.opts input:checked+span{background:var(--g);color:var(--gx);border-color:var(--g)}
+.opts input:disabled+span{opacity:.35}
+.opts input:focus-visible+span{box-shadow:0 0 0 3px rgba(27,107,87,.3)}
+.cnt{display:inline-block;margin-left:auto;font-size:.8rem;font-weight:700;background:var(--au2);color:var(--g);padding:3px 10px;border-radius:99px}
+.note{background:var(--au2);border-radius:12px;padding:9px 12px;font-size:.85rem;margin:0 0 12px;color:var(--tx)}
+.err{color:#c0392b;font-size:.85rem;margin:8px 0 0;display:none}
+.s.bad .err{display:block}.s.bad{border-color:#c0392b}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,var(--bg) 35%);z-index:5}
+.bar>div{max-width:620px;margin:0 auto}
+button,a.btn{display:block;width:100%;text-align:center;text-decoration:none;font:inherit;font-weight:800;border-radius:16px;padding:15px;cursor:pointer;border:1.5px solid var(--g);background:var(--g);color:var(--gx);margin-top:10px}
+button.alt,a.btn.alt{background:transparent;color:var(--g)}
+a.btn.wa{background:#1fa855;border-color:#1fa855;color:#fff}
+#done{display:none}
+pre{white-space:pre-wrap;word-break:break-word;background:var(--soft);border:1px solid var(--bd);border-radius:14px;padding:12px;font:inherit;font-size:.88rem;max-height:240px;overflow:auto;margin:10px 0}
+footer{text-align:center;color:var(--mut);font-size:.85rem;margin:22px 0 0}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+ <div class="av">MD</div>
+ <h1>Diangue Dou Wess /<br>Diandhe Lawotako</h1>
+ <p class="q">« Il n’est jamais trop tard pour apprendre le Saint Coran et sa religion »</p>
+ <div class="prof"><b>Oustaz Mouhamadou Madina Diallo</b>Hafiz al-Qur’an · Étudiant à l’Université Cheikh Anta Diop de Dakar</div>
+ <div class="pills"><span>Coran</span><span>Fiqh</span><span>Azkar</span></div>
+</header>
+
+<form id="form" novalidate>
+ <section class="card s" id="s1"><p class="t"><i>1</i>Qui es-tu ?</p><p class="h">Pour que nous puissions te recontacter.</p>
+  <input type="text" id="nom" placeholder="Prénom et nom" autocomplete="name" style="margin-bottom:10px">
+  <input type="tel" id="tel" placeholder="Téléphone / WhatsApp (+221…)" autocomplete="tel">
+  <div class="err">Indique ton nom et ton numéro.</div></section>
+
+ <section class="card s" id="s2"><p class="t"><i>2</i>Pour qui est le cours ?</p><p class="h">&nbsp;</p>
+  <div class="opts" id="pub"><label><input type="radio" name="pub" value="Moi-même"><span>🙋 Moi-même</span></label><label><input type="radio" name="pub" value="Mon enfant"><span>🧒 Mon enfant</span></label></div>
+  <div class="err">Choisis une option.</div></section>
+
+ <section class="card s" id="s3"><p class="t"><i>3</i>Ce que tu veux apprendre</p><p class="h">Tu peux en choisir plusieurs.</p>
+  <div class="opts" id="mat"><label><input type="checkbox" value="Coran"><span>📖 Coran</span></label><label><input type="checkbox" value="Azkar"><span>🤲 Azkar</span></label><label><input type="checkbox" value="Fiqh"><span>🕌 Fiqh</span></label></div>
+  <div class="err">Choisis au moins une matière.</div></section>
+
+ <section class="card s" id="s4"><p class="t"><i>4</i>Ton niveau actuel</p><p class="h">&nbsp;</p>
+  <div class="opts" id="niv"><label><input type="radio" name="niv" value="Débutant"><span>🌱 Débutant</span></label><label><input type="radio" name="niv" value="Intermédiaire"><span>📗 Intermédiaire</span></label><label><input type="radio" name="niv" value="Avancé"><span>🌟 Avancé</span></label></div>
+  <div class="err">Choisis ton niveau.</div></section>
+
+ <section class="card s" id="s5"><p class="t"><i>5</i>Tu veux commencer par où ?</p><p class="h">&nbsp;</p>
+  <textarea id="deb" placeholder="Ex. : les lettres, la récitation, les ablutions…"></textarea>
+  <div class="err">Dis-nous par quoi tu veux commencer.</div></section>
+
+ <section class="card s" id="s6"><p class="t"><i>6</i>Tes jours disponibles <span class="cnt" id="cnt">0 / 3</span></p><p class="h">Choisis 3 jours maximum.</p>
+  <div class="note">⚠️ Les cours se font sur <b>3 jours maximum</b> par semaine.</div>
+  <div class="opts" id="jours"><label><input type="checkbox" value="Lundi"><span>Lun</span></label><label><input type="checkbox" value="Mardi"><span>Mar</span></label><label><input type="checkbox" value="Mercredi"><span>Mer</span></label><label><input type="checkbox" value="Jeudi"><span>Jeu</span></label><label><input type="checkbox" value="Vendredi"><span>Ven</span></label><label><input type="checkbox" value="Samedi"><span>Sam</span></label><label><input type="checkbox" value="Dimanche"><span>Dim</span></label></div>
+  <div class="err">Choisis entre 1 et 3 jours.</div></section>
+
+ <section class="card s" id="s7"><p class="t"><i>7</i>Modalité de cours</p><p class="h">Selon ton choix et ta convenance.</p>
+  <div class="opts" id="mod"><label><input type="radio" name="mod" value="À distance (en ligne)"><span>💻 À distance</span></label><label><input type="radio" name="mod" value="En présentiel (à domicile)"><span>🏠 À domicile</span></label></div>
+  <div class="err">Choisis une modalité.</div></section>
+
+ <section class="card s" id="s8"><p class="t"><i>8</i>Pourquoi notre école ?</p><p class="h">&nbsp;</p>
+  <textarea id="why" placeholder="Dis-nous ce qui t’a motivé(e)…"></textarea>
+  <div class="err">Ce champ est obligatoire.</div></section>
+
+ <section class="card" style="background:linear-gradient(160deg,#0b3a2f,#127058);color:#fff;border:0"><p class="t" style="color:#f6e3a1">💳 Détails de l’inscription</p>
+  <p style="margin:8px 0 2px;font-size:2rem;font-weight:800">15 000 FCFA</p>
+  <p style="margin:0 0 10px;opacity:.9">Frais d’inscription, à payer par <b>Wave</b> au numéro :</p>
+  <p style="margin:0 0 12px;background:rgba(255,255,255,.14);border-radius:14px;padding:12px;text-align:center;font-size:1.35rem;font-weight:800;letter-spacing:1px;user-select:all">78 476 82 17</p>
+  <p style="margin:0;opacity:.9">🗓️ <b>Salaire mensuel</b> : à discuter avec l’Oustaz.</p></section>
+
+ <section class="card s" id="s9"><p class="t"><i>9</i>Inscription et salaire</p><p class="h">Seras-tu prêt(e) à payer l’inscription et le salaire ?</p>
+  <div class="opts" id="pay"><label><input type="radio" name="pay" value="Oui"><span>✅ Oui</span></label><label><input type="radio" name="pay" value="À discuter"><span>💬 À discuter</span></label><label><input type="radio" name="pay" value="Non"><span>❌ Non</span></label></div>
+  <div class="err">Merci de répondre.</div></section>
+
+ <div class="bar"><div><p id="msg" style="display:none;margin:0 0 8px;background:#c0392b;color:#fff;border-radius:12px;padding:9px 12px;font-size:.9rem;font-weight:700;text-align:center">⚠️ Il reste des questions à remplir (en rouge).</p><button type="button" id="go" style="margin:0">Envoyer mon inscription</button></div></div>
+</form>
+
+<section id="done" class="card">
+ <p class="t" style="font-size:1.1rem">🎉 Ton message est prêt</p>
+ <p style="margin:6px 0 0;color:var(--mut)">Envoie-le par WhatsApp (le plus simple) ou par mail, puis règle les <b>15 000 FCFA</b> par Wave au <b>78 476 82 17</b> pour finaliser ton inscription.</p>
+ <pre id="prev"></pre>
+ <a class="btn wa" id="wa" href="#" target="_blank" rel="noopener">Envoyer par WhatsApp (recommandé)</a>
+ <a class="btn alt" id="m1" href="#">Envoyer par mail</a>
+ <a class="btn alt" id="m2" href="#" target="_blank" rel="noopener">Ouvrir Gmail</a>
+ <button class="alt" id="cp" type="button">Copier le message</button>
+ <button class="alt" id="back" type="button">← Modifier mes réponses</button>
+</section>
+
+<noscript><p style="background:#c0392b;color:#fff;border-radius:12px;padding:10px 12px;text-align:center;font-weight:700">⚠️ Le bouton ne peut pas fonctionner ici. Ouvre ce lien dans Safari ou Chrome.</p></noscript>
+<footer>Le bouton ne répond pas ? Ouvre ce lien dans <b>Safari</b> (icône « Partager » → Ouvrir dans Safari).<br><br>Inscriptions &amp; renseignements : WhatsApp +221 78 476 82 17<br>Un pas aujourd’hui vers une vie meilleure demain…</footer>
+</main>
+
+<script>
+(function(){
+var TO="medinediallo953@gmail.com",WA="221784768217",MAXJ=3;
+var $=function(i){return document.getElementById(i)};
+function chk(id){return Array.prototype.map.call(document.querySelectorAll("#"+id+" input:checked"),function(x){return x.value})}
+var jb=document.querySelectorAll("#jours input");
+function upd(){var n=chk("jours").length;$("cnt").textContent=n+" / "+MAXJ;
+ for(var i=0;i<jb.length;i++)jb[i].disabled=(n>=MAXJ&&!jb[i].checked)}
+for(var i=0;i<jb.length;i++)jb[i].addEventListener("change",upd);
+function val(){return{nom:$("nom").value.trim(),tel:$("tel").value.trim(),pub:chk("pub")[0]||"",mat:chk("mat"),niv:chk("niv")[0]||"",
+ deb:$("deb").value.trim(),jours:chk("jours"),mod:chk("mod")[0]||"",why:$("why").value.trim(),pay:chk("pay")[0]||""}}
+function valid(v){
+ var ok={s1:v.nom&&v.tel,s2:v.pub,s3:v.mat.length,s4:v.niv,s5:v.deb,s6:v.jours.length>0&&v.jours.length<=MAXJ,s7:v.mod,s8:v.why,s9:v.pay},all=true;
+ for(var k in ok){var g=!!ok[k];$(k).classList.toggle("bad",!g);if(!g)all=false}return all}
+function msg(v){return ["Assalamou alaykoum Oustaz, voici ma demande d’inscription :","",
+ "Prénom et nom : "+v.nom,"Téléphone / WhatsApp : "+v.tel,"Cours pour : "+v.pub,"Je veux apprendre : "+v.mat.join(", "),
+ "Niveau actuel : "+v.niv,"Je veux commencer par : "+v.deb,"Jours disponibles : "+v.jours.join(", "),"Modalité : "+v.mod,
+ "Pourquoi votre école : "+v.why,"Prêt(e) à payer l’inscription et le salaire : "+v.pay].join("\n")}
+$("form").addEventListener("submit",function(e){e.preventDefault()});
+$("go").addEventListener("click",function(){var v=val();
+ if(!valid(v)){$("msg").style.display="block";var b=document.querySelector(".s.bad");if(b)b.scrollIntoView(true);return}
+ $("msg").style.display="none";
+ var m=msg(v),s="Inscription cours – "+v.nom;
+ $("prev").textContent=m;
+ $("m1").href="mailto:"+TO+"?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(m);
+ $("m2").href="https://mail.google.com/mail/?view=cm&fs=1&to="+TO+"&su="+encodeURIComponent(s)+"&body="+encodeURIComponent(m);
+ $("wa").href="https://wa.me/"+WA+"?text="+encodeURIComponent(m);
+ $("form").style.display="none";$("done").style.display="block";window.scrollTo(0,0)});
+$("back").onclick=function(){$("done").style.display="none";$("form").style.display="block";window.scrollTo(0,0)};
+$("cp").onclick=function(){var t=$("prev").textContent,b=$("cp");
+ function ok(){b.textContent="Copié ✓"}
+ function fb(){var r=document.createRange();r.selectNodeContents($("prev"));var s=window.getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand("copy");ok()}catch(x){b.textContent="Sélectionne et copie le texte"}}
+ try{navigator.clipboard.writeText(t).then(ok,fb)}catch(x){fb()}};
+upd();
+})();
+</script>
+</body>
+</html>
