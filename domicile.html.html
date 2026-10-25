@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cours à domicile – Diangue Dou Wess / Diandhe Lawotako</title>
+<style>
+:root{--bg:#f4f1e8;--card:#fff;--tx:#14302a;--mut:#62736d;--bd:#e6e0cc;--g:#0f4a3c;--g2:#1b6b57;--gx:#fff;--au:#c9a24a;--au2:#f6ebc8;--soft:#f8f6ee;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a16;--card:#13261f;--tx:#f0ead6;--mut:#a3b3ac;--bd:#27443a;--g:#d8b45a;--g2:#e6c677;--gx:#10231d;--au:#d8b45a;--au2:#3a3320;--soft:#0f211b}}
+:root[data-theme="dark"]{--bg:#0b1a16;--card:#13261f;--tx:#f0ead6;--mut:#a3b3ac;--bd:#27443a;--g:#d8b45a;--g2:#e6c677;--gx:#10231d;--au:#d8b45a;--au2:#3a3320;--soft:#0f211b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:640px;margin:0 auto;padding:0 14px 110px}
+.hero{margin:12px 0 0;border-radius:24px;padding:24px 18px 20px;text-align:center;color:#fff;background:radial-gradient(circle at 85% 0%,rgba(201,162,74,.35),transparent 45%),linear-gradient(160deg,#0b3a2f,#127058);box-shadow:0 10px 30px rgba(15,74,60,.25)}
+.hero img{width:92px;height:92px;border-radius:50%;border:3px solid #f1dfa6;object-fit:cover;background:#fff}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:1.55rem;line-height:1.15;margin:10px 0 6px}
+.hero .q{font-style:italic;opacity:.92;margin:0 0 12px;font-size:.95rem}
+.prof{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:16px;padding:10px 14px;font-size:.86rem;line-height:1.4}
+.prof b{display:block;font-size:1rem;color:#f6e3a1}
+.tabs{display:flex;gap:6px;background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:5px;margin:14px 0 0}
+.tabs button{flex:1;margin:0;padding:11px 8px;border:0;background:transparent;color:var(--mut);border-radius:12px;font-size:.95rem}
+.tabs button.on{background:var(--g);color:var(--gx)}
+.js .pg{display:none}.js .pg.on{display:block}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:16px;margin-top:14px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+h2{font-family:Georgia,serif;font-size:1.25rem;color:var(--g);margin:0 0 6px}
+.t{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--g);margin:0 0 4px;font-size:1.02rem}
+.t i{font-style:normal;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--g);color:var(--gx);font-size:.82rem;flex:none}
+.h{color:var(--mut);font-size:.86rem;margin:0 0 12px 38px}
+p{margin:6px 0}
+.mut{color:var(--mut)}
+.mod{border-left:4px solid var(--au);background:var(--soft);border-radius:0 14px 14px 0;padding:10px 12px;margin-top:10px}
+.mod b{color:var(--g)}
+.mod ul{margin:4px 0 6px;padding-left:18px}
+.test{display:inline-block;background:var(--au2);color:var(--g);font-weight:700;font-size:.8rem;border-radius:99px;padding:3px 10px}
+.soon{opacity:.9;border:1.5px dashed var(--au)}
+.badge{display:inline-block;background:var(--au);color:#2b2208;font-weight:800;font-size:.75rem;padding:3px 10px;border-radius:99px;vertical-align:middle}
+.price{background:linear-gradient(160deg,#0b3a2f,#127058);color:#fff;border:0}
+.price .big{font-size:2rem;font-weight:800;margin:4px 0}
+.price .num{background:rgba(255,255,255,.14);border-radius:14px;padding:10px;text-align:center;font-size:1.3rem;font-weight:800;letter-spacing:1px;margin:8px 0;user-select:all}
+input[type=text],input[type=tel],input[type=time],select,textarea{width:100%;font:inherit;color:var(--tx);background:var(--soft);border:1.5px solid var(--bd);border-radius:14px;padding:13px}
+textarea{min-height:84px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--g2);box-shadow:0 0 0 3px rgba(27,107,87,.18)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{position:relative;cursor:pointer}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:block;padding:10px 16px;border-radius:99px;border:1.5px solid var(--bd);background:var(--soft);font-weight:600}
+.opts input:checked+span{background:var(--g);color:var(--gx);border-color:var(--g)}
+.opts input:disabled+span{opacity:.4}
+.sub{display:none;margin-top:10px;padding:10px;background:var(--soft);border-radius:14px}
+.sub.on{display:block}
+.cnt{margin-left:auto;font-size:.8rem;font-weight:700;background:var(--au2);color:var(--g);padding:3px 10px;border-radius:99px}
+.note{background:var(--au2);border-radius:12px;padding:9px 12px;font-size:.85rem;margin:0 0 12px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.row2 small{display:block;font-weight:700;color:var(--g);font-size:.8rem;margin-bottom:4px}
+.err{color:#c0392b;font-size:.85rem;margin:8px 0 0;display:none}
+.s.bad .err{display:block}.s.bad{border-color:#c0392b}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,var(--bg) 35%);z-index:5;display:none}
+.bar.on{display:block}.bar>div{max-width:640px;margin:0 auto}
+button,a.btn{display:block;width:100%;text-align:center;text-decoration:none;font:inherit;font-weight:800;border-radius:16px;padding:15px;cursor:pointer;border:1.5px solid var(--g);background:var(--g);color:var(--gx);margin-top:10px}
+button.alt,a.btn.alt{background:transparent;color:var(--g)}
+a.btn.wa{background:#1fa855;border-color:#1fa855;color:#fff}
+#done{display:none}
+pre{white-space:pre-wrap;word-break:break-word;background:var(--soft);border:1px solid var(--bd);border-radius:14px;padding:12px;font:inherit;font-size:.88rem;max-height:240px;overflow:auto;margin:10px 0}
+footer{text-align:center;color:var(--mut);font-size:.85rem;margin:22px 0 0}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+ <img alt="Logo Diangue Dou Wess" src="data:image/jpeg;base64,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">
+ <h1>Diangue Dou Wess /<br>Diandhe Lawotako</h1>
+ <p class="q">« Il n’est jamais trop tard pour apprendre le Saint Coran et sa religion »</p>
+ <div class="prof"><b>Oustaz Mouhamadou Madina Diallo</b>Hafiz al-Qur’an · Étudiant à l’Université Cheikh Anta Diop de Dakar</div>
+ <div style="margin-top:12px"><span class="badge">🏠 Cours à domicile</span></div>
+</header>
+
+<nav class="tabs"><button type="button" id="t1" class="on">📖 Le programme</button><button type="button" id="t2">📝 S’inscrire</button></nav>
+
+<!-- ===== PROGRAMME ===== -->
+<div class="pg on" id="p1">
+ <section class="card"><h2>Programme sur mesure</h2>
+  <p class="mut">Cours pour enfants, adultes et seniors. Chacun avance à son rythme, avec un suivi régulier.</p></section>
+
+ <section class="card"><h2>📖 Le Saint Coran</h2>
+  <p>Tout commence par un <b>test de mémorisation</b>. Ensuite, nous commençons <b>là où tu t’arrêtes</b>.</p>
+  <div class="mod"><ul><li>Apprentissage</li><li>Récitation</li><li>Tajwid et mémorisation</li></ul></div></section>
+
+ <section class="card"><h2>🤲 Les Adhkar <span class="badge">Première promotion</span></h2>
+  <p class="mut">Pour les débutants et les seniors. Objectif : apprendre et pratiquer les invocations essentielles du quotidien.</p>
+  <div class="mod"><b>Module 1 · Invocations de la prière</b><ul><li>Invocations d’ouverture (Istiftah)</li><li>Inclinaison (Ruku’) et prosternation (Sujud)</li><li>Invocations d’après-prière</li></ul><span class="test">📝 Test de fin de module</span></div>
+  <div class="mod"><b>Module 2 · Invocations du matin et du soir</b><ul><li>Invocations essentielles du début de journée</li><li>Invocations essentielles de la fin de journée</li><li>Ritualisation et bienfaits de la pratique</li></ul><span class="test">📝 Test de fin de module</span></div>
+  <div class="mod"><b>Module 3 · Invocations des bienséances</b><ul><li>Entrée et sortie de la maison</li><li>Avant et après les repas</li><li>Sommeil et réveil</li></ul><span class="test">📝 Test de fin de module</span></div>
+  <div class="mod"><b>Module 4 · Invocations des besoins</b><ul><li>Demande de pardon (Istighfar)</li><li>Invocations apaisantes face aux soucis</li><li>Invocations pour la santé et la famille</li></ul><span class="test">📝 Test de fin de module</span></div>
+  <p class="mut" style="margin-top:12px">À la fin de chaque module, un test permet de mesurer ton évolution avant de passer au suivant.</p></section>
+
+ <section class="card soft soon"><h2>🕌 Le Fiqh <span class="badge">Bientôt</span></h2>
+  <p class="mut">Purification (Tahara), ablutions et pratique de la prière. Ce cours ouvrira <b>après avoir appris tout ce qui précède</b> (Coran et Adhkar de la première promotion).</p></section>
+
+ <section class="card"><h2>🗓️ Comment ça se passe ?</h2>
+  <div class="mod"><ul>
+   <li>🏠 <b>Cours à domicile</b> (en présentiel)</li></ul></div>
+  <div class="mod"><ul><li><b>3 jours</b> par semaine, du lundi au samedi : <b>2 jours pour le Coran</b> et <b>1 jour pour les Adhkar</b></li><li><b>Durée</b> : <b>2 h 30 maximum</b> par cours</li><li>🔁 <b>Avant chaque nouvelle leçon</b>, tu récites d’abord la leçon précédente</li></ul></div></section>
+
+ <section class="card price"><h2 style="color:#f6e3a1">💳 Inscription</h2>
+  <div class="big">20 000 FCFA</div>
+  <p style="margin:0">Frais d’inscription, à payer par <b>Wave</b> au :</p><div class="num">78 476 82 17</div>
+  <p style="margin:0">🗓️ <b>Salaire mensuel</b> : à discuter avec l’Oustaz.</p></section>
+
+ <button type="button" id="go1">Je m’inscris →</button>
+</div>
+
+<!-- ===== INSCRIPTION ===== -->
+<div class="pg" id="p2">
+<form id="form" novalidate>
+ <section class="card s" id="s1"><p class="t"><i>1</i>Qui es-tu ?</p><p class="h">Pour que nous puissions te recontacter.</p>
+  <input type="text" id="nom" placeholder="Prénom et nom" autocomplete="name" style="margin-bottom:10px">
+  <input type="tel" id="tel" placeholder="Téléphone / WhatsApp (+221…)" autocomplete="tel">
+  <div class="err">Indique ton nom et ton numéro.</div></section>
+
+ <section class="card s" id="s2"><p class="t"><i>2</i>Quel type de cours ?</p><p class="h">&nbsp;</p>
+  <div class="opts" id="pub"><label><input type="radio" name="pub" value="En famille"><span>👨‍👩‍👧 En famille</span></label><label><input type="radio" name="pub" value="Personnelle"><span>🙋 Personnelle</span></label></div>
+  <div class="err">Choisis une option.</div></section>
+
+ <section class="card s" id="s3"><p class="t"><i>3</i>Ce que tu veux apprendre</p><p class="h">Tu peux choisir les deux.</p>
+  <div class="opts" id="mat"><label><input type="checkbox" value="Coran"><span>📖 Coran</span></label><label><input type="checkbox" value="Adhkar (première promotion)"><span>🤲 Adhkar</span></label><label><input type="checkbox" disabled><span>🕌 Fiqh · bientôt</span></label></div>
+  <div class="note" style="margin-top:12px">📖 <b>Coran</b> : ton niveau sera déterminé par un <b>test de mémorisation</b>.<br>🤲 <b>Adhkar</b> : tu rejoins la <b>première promotion</b>.</div>
+  <div class="err">Choisis au moins une matière.</div></section>
+
+ <section class="card s" id="s4"><p class="t"><i>4</i>Tu veux commencer par où ?</p><p class="h">&nbsp;</p>
+  <textarea id="deb" placeholder="Ex. : la récitation, le Module 1 des Adhkar…"></textarea>
+  <div class="err">Dis-nous par quoi tu veux commencer.</div></section>
+
+ <section class="card s" id="s5"><p class="t"><i>5</i>Où auront lieu les cours ?</p><p class="h">Cours à domicile (en présentiel).</p>
+  <input type="text" id="adr" placeholder="Ville, quartier et repère">
+  <div class="err">Indique ton quartier ou ton adresse.</div></section>
+
+ <section class="card s" id="s6"><p class="t"><i>6</i>Tes jours et ton heure</p><p class="h">3 jours par semaine : 2 pour le Coran, 1 pour les Adhkar.</p>
+  <div class="note">🔁 Avant chaque nouvelle leçon, tu récites d’abord la leçon précédente.</div>
+  <p class="mut" id="gnone">Choisis d’abord ta matière (étape 3).</p>
+  <div id="gC" style="display:none"><p style="margin:0 0 8px;font-weight:700;color:var(--g);display:flex;align-items:center">📖 Coran (1 à 2 jours) <span class="cnt" id="cC">0 / 2</span></p><div class="opts" id="joursC"><label><input type="checkbox" value="Lundi"><span>Lun</span></label><label><input type="checkbox" value="Mardi"><span>Mar</span></label><label><input type="checkbox" value="Mercredi"><span>Mer</span></label><label><input type="checkbox" value="Jeudi"><span>Jeu</span></label><label><input type="checkbox" value="Vendredi"><span>Ven</span></label><label><input type="checkbox" value="Samedi"><span>Sam</span></label></div></div>
+  <div id="gA" style="display:none;margin-top:14px"><p style="margin:0 0 8px;font-weight:700;color:var(--g);display:flex;align-items:center">🤲 Adhkar (1 jour) <span class="cnt" id="cA">0 / 1</span></p><div class="opts" id="joursA"><label><input type="checkbox" value="Lundi"><span>Lun</span></label><label><input type="checkbox" value="Mardi"><span>Mar</span></label><label><input type="checkbox" value="Mercredi"><span>Mer</span></label><label><input type="checkbox" value="Jeudi"><span>Jeu</span></label><label><input type="checkbox" value="Vendredi"><span>Ven</span></label><label><input type="checkbox" value="Samedi"><span>Sam</span></label></div></div>
+  <div class="row2"><div><small>HEURE SOUHAITÉE</small><input type="time" id="heure"></div><div><small>DURÉE (2 h 30 max)</small><select id="duree"><option value="">Choisir…</option><option>30 min</option><option>45 min</option><option>1 h</option><option>1 h 15</option><option>1 h 30</option><option>2 h</option><option>2 h 30</option></select></div></div>
+  <div class="err">Choisis tes jours (Coran : 1 à 2, Adhkar : 1), l’heure et la durée.</div></section>
+
+ <section class="card s" id="s7"><p class="t"><i>7</i>Pourquoi notre école ?</p><p class="h">&nbsp;</p>
+  <textarea id="why" placeholder="Dis-nous ce qui t’a motivé(e)…"></textarea>
+  <div class="err">Ce champ est obligatoire.</div></section>
+
+ <section class="card price"><p class="t" style="color:#f6e3a1">💳 Détails de l’inscription</p>
+  <div class="big">20 000 FCFA</div><p style="margin:0">À payer par <b>Wave</b> au :</p><div class="num">78 476 82 17</div>
+  <p style="margin:0">🗓️ <b>Salaire mensuel</b> : à discuter avec l’Oustaz.</p></section>
+
+ <section class="card s" id="s8"><p class="t"><i>8</i>Inscription et salaire</p><p class="h">Seras-tu prêt(e) à payer l’inscription et le salaire ?</p>
+  <div class="opts" id="pay"><label><input type="radio" name="pay" value="Oui"><span>✅ Oui</span></label><label><input type="radio" name="pay" value="À discuter"><span>💬 À discuter</span></label><label><input type="radio" name="pay" value="Non"><span>❌ Non</span></label></div>
+  <div class="err">Merci de répondre.</div></section>
+</form>
+
+<section id="done" class="card">
+ <p class="t" style="font-size:1.1rem">🎉 Ton message est prêt</p>
+ <p class="mut">Envoie-le par WhatsApp (le plus simple) ou par mail pour finaliser ton inscription, puis règle les <b>20 000 FCFA</b> par Wave au <b>78 476 82 17</b>.</p>
+ <pre id="prev"></pre>
+ <a class="btn wa" id="wa" href="#" target="_blank" rel="noopener">Envoyer par WhatsApp (recommandé)</a>
+ <a class="btn alt" id="m1" href="#">Envoyer par mail</a>
+ <a class="btn alt" id="m2" href="#" target="_blank" rel="noopener">Ouvrir Gmail</a>
+ <button class="alt" id="cp" type="button">Copier le message</button>
+ <button class="alt" id="back" type="button">← Modifier mes réponses</button>
+</section>
+</div>
+
+<footer>Inscriptions &amp; renseignements : WhatsApp +221 78 476 82 17<br>Un pas aujourd’hui vers une vie meilleure demain…</footer>
+</main>
+<div class="bar" id="bar"><div><p id="msg" style="display:none;margin:0 0 8px;background:#c0392b;color:#fff;border-radius:12px;padding:9px 12px;font-size:.9rem;font-weight:700;text-align:center">⚠️ Il reste des questions à remplir (en rouge).</p><button type="button" id="go" style="margin:0">Envoyer mon inscription</button></div></div>
+
+<script>
+(function(){
+document.documentElement.className="js";
+var HOME=true;var TO="medinediallo953@gmail.com",WA="221784768217";
+var $=function(i){return document.getElementById(i)};
+function chk(id){return Array.prototype.map.call(document.querySelectorAll("#"+id+" input:checked"),function(x){return x.value})}
+function tab(n){$("p1").className="pg"+(n==1?" on":"");$("p2").className="pg"+(n==2?" on":"");$("t1").className=n==1?"on":"";$("t2").className=n==2?"on":"";
+ $("bar").className="bar"+(n==2&&$("form").style.display!=="none"&&$("done").style.display!=="block"?" on":"");
+ try{history.replaceState(null,"",n==2?"#inscription":"#programme")}catch(e){}window.scrollTo(0,0)}
+$("t1").onclick=function(){tab(1)};$("t2").onclick=function(){tab(2)};$("go1").onclick=function(){tab(2)};
+var mb=document.querySelectorAll("#mod input");
+for(var k=0;k<mb.length;k++)mb[k].addEventListener("change",function(){$("sub").className="sub"+(chk("mod")[0]==="Appel WhatsApp en direct"?" on":"")});
+var CO="Coran",AD="Adhkar (première promotion)";
+function eff(){var m=chk("mat"),c=m.indexOf(CO)>-1,a=m.indexOf(AD)>-1;return{c:c,a:a,jc:c?chk("joursC"):[],ja:a?chk("joursA"):[]}}
+function syncDays(){var e=eff();
+ $("gC").style.display=e.c?"block":"none";$("gA").style.display=e.a?"block":"none";$("gnone").style.display=(e.c||e.a)?"none":"block";
+ $("cC").textContent=e.jc.length+" / 2";$("cA").textContent=e.ja.length+" / 1";
+ var x=document.querySelectorAll("#joursC input"),y=document.querySelectorAll("#joursA input"),i;
+ for(i=0;i<x.length;i++)x[i].disabled=!x[i].checked&&(e.jc.length>=2||e.ja.indexOf(x[i].value)>-1);
+ for(i=0;i<y.length;i++)y[i].disabled=!y[i].checked&&(e.ja.length>=1||e.jc.indexOf(y[i].value)>-1)}
+Array.prototype.forEach.call(document.querySelectorAll("#mat input,#joursC input,#joursA input"),function(n){n.addEventListener("change",syncDays)});
+function val(){return{nom:$("nom").value.trim(),tel:$("tel").value.trim(),pub:chk("pub")[0]||"",mat:chk("mat"),deb:$("deb").value.trim(),
+ mod:chk("mod")[0]||"",typ:chk("typ")[0]||"",adr:($("adr")?$("adr").value.trim():""),e:eff(),heure:$("heure").value,duree:$("duree").value,why:$("why").value.trim(),pay:chk("pay")[0]||""}}
+function valid(v){
+ var ok={s1:v.nom&&v.tel,s2:v.pub,s3:v.mat.length,s4:v.deb,s5:HOME?v.adr:(v.mod&&(v.mod!=="Appel WhatsApp en direct"||v.typ)),s6:(v.e.c||v.e.a)&&(!v.e.c||(v.e.jc.length>=1&&v.e.jc.length<=2))&&(!v.e.a||v.e.ja.length===1)&&v.heure&&v.duree,s7:v.why,s8:v.pay},all=true;
+ for(var k in ok){var g=!!ok[k];$(k).classList.toggle("bad",!g);if(!g)all=false}return all}
+function msg(v){var m=HOME?"À domicile":v.mod+(v.mod==="Appel WhatsApp en direct"?" – "+v.typ:"");
+ var L=["Assalamou alaykoum Oustaz, voici ma demande d’inscription :","","Prénom et nom : "+v.nom,"Téléphone / WhatsApp : "+v.tel,"Type de cours : "+v.pub,
+ "Je veux apprendre : "+v.mat.join(", "),"Je veux commencer par : "+v.deb,"Mode de cours : "+m];
+ if(HOME)L.push("Adresse : "+v.adr);
+ if(v.e.c)L.push("Jours Coran : "+v.e.jc.join(", "));
+ if(v.e.a)L.push("Jour Adhkar : "+v.e.ja.join(", "));
+ L.push("Heure souhaitée : "+v.heure,"Durée : "+v.duree,"Pourquoi votre école : "+v.why,"Prêt(e) à payer l’inscription et le salaire : "+v.pay);
+ return L.join("\n")}
+$("form").addEventListener("submit",function(e){e.preventDefault()});
+$("go").addEventListener("click",function(){var v=val();
+ if(!valid(v)){$("msg").style.display="block";var b=document.querySelector(".s.bad");if(b)b.scrollIntoView(true);return}
+ $("msg").style.display="none";
+ var m=msg(v),s="Inscription cours – "+v.nom;$("prev").textContent=m;
+ $("m1").href="mailto:"+TO+"?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(m);
+ $("m2").href="https://mail.google.com/mail/?view=cm&fs=1&to="+TO+"&su="+encodeURIComponent(s)+"&body="+encodeURIComponent(m);
+ $("wa").href="https://wa.me/"+WA+"?text="+encodeURIComponent(m);
+ $("form").style.display="none";$("done").style.display="block";$("bar").className="bar";window.scrollTo(0,0)});
+$("back").onclick=function(){$("done").style.display="none";$("form").style.display="block";$("bar").className="bar on";window.scrollTo(0,0)};
+$("cp").onclick=function(){var t=$("prev").textContent,b=$("cp");
+ function ok(){b.textContent="Copié ✓"}
+ function fb(){var r=document.createRange();r.selectNodeContents($("prev"));var s=window.getSelection();s.removeAllRanges();s.addRange(r);try{document.execCommand("copy");ok()}catch(x){b.textContent="Sélectionne et copie le texte"}}
+ try{navigator.clipboard.writeText(t).then(ok,fb)}catch(x){fb()}};
+syncDays();tab(location.hash==="#inscription"?2:1);
+})();
+</script>
+</body>
+</html>
